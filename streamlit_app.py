@@ -10,7 +10,7 @@ import sys
 
 gpt_model = st.secrets["openai"]["model"]
 gpt_api_key = st.secrets["openai"]["api_key"]
-db_path = st.secrets["db"]["path"]
+db_path = st.secrets["sqlite"]["path"]
 omdb_api_key = st.secrets["omdb"]["api_key"]
 
 client = OpenAI(api_key=gpt_api_key)
